@@ -41,3 +41,12 @@ class Fridge:
     # 2nd shelf: greens
     # 1st shelf: juices
 
+    # Add a functionality, where if wanting a drink, it will prompt to choose from glass sizes in the
+    # upper_closet.py, and then it will reduce the chosen drink, for example 0,2l from juice bottle.
+
+    # Functionality to place the glass to refrigerator after emptying the glass.
+
+    # functionality to alert when running out of product
+    # functionality to add "best before" dates and alerting when something is getting old
+    # according to "import time"
+
