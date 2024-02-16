@@ -25,7 +25,7 @@ class Fridge:
         current_supply = self.supply
         return current_supply
 
-    #Look for something in the fridgerator
+    # Look for something in the refrigerator
     def pick_item(self):
         looking_for_something = True
         while looking_for_something:
@@ -34,4 +34,10 @@ class Fridge:
             if extra == "no":
                 looking_for_something = False
 
+    # Add a functionality to unload shopping bags categorically into each of the 30l shelf's:
+    # 5th shelf: butter, water, berries
+    # 4th shelf: milk products
+    # 3rd shelf: meat
+    # 2nd shelf: greens
+    # 1st shelf: juices
 
