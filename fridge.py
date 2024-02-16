@@ -5,7 +5,7 @@ class Fridge:
         self.shelfs = 5 #shelfs
         self.temperature = 6 #celsius
 
-    #Method to update bought groceries into the current supply of fridgerator
+    #Update bought groceries into the current supply of fridgerator
     def input_groceries(self):
 
         #Start unloading the shoppingbags
