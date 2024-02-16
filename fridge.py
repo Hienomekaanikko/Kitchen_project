@@ -24,3 +24,14 @@ class Fridge:
                 self.supply[purchase] = self.supply.get(purchase, 0) + amount
         current_supply = self.supply
         return current_supply
+
+    #Look for something in the fridgerator
+    def pick_item(self):
+        looking_for_something = True
+        while looking_for_something:
+            choice = input(f"What would you like to have? Here are the options: {self.supply}")
+            extra = input("Anything else? If not, say 'no', if yes, say 'yes': ")
+            if extra == "no":
+                looking_for_something = False
+
+
