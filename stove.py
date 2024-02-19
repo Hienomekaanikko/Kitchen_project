@@ -5,3 +5,5 @@ class Stove:
 
 
 class Oven:
+
+#add functionalities
