@@ -21,9 +21,14 @@ class Dishwasher:
         running = True
         while running:
             print("BrRrRrRrRrRrR...")
-            time.sleep(10)
-            print("Beep, Boop. Dishes are ready and clean!")
+            for i in range(10, 0, -1):
+                time.sleep(1)
+                print(f"\r{i} seconds left", end="", flush=True)
+            print("\r             ", end="", flush=True)
+            print("\rBeep, Boop. Dishes are ready and clean!")
             running = False
 
-    def empty_dishwasher(self):
+dishwasher = Dishwasher()
+
+dishwasher.run_dishwasher()
 
