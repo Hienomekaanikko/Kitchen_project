@@ -29,9 +29,6 @@ class Microwave:
         print(f"Alright, lets heat the {food} up!")
         return food
 
-    def take_food(self):
-        pass
-
 
 microwave = Microwave()
 
