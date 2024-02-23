@@ -1,11 +1,14 @@
 import time
 
 class Microwave:
+
+
     def __init__(self):
-        self.space = 10 #liters
-        self.dirt = 1 #in scale from 10 to being dirtiest to 1 being cleanest
+        self.space = 10  #liters
+        self.dirt = 1  #in scale from 10 to being dirtiest to 1 being cleanest
 
     def run_microwave(self):
+        food = self.input_food()
         timer = int(input("Set the timer in seconds: "))
         power = int(input("Set the power in watts: "))
         running = True
@@ -16,19 +19,20 @@ class Microwave:
                 time.sleep(1)
                 print(f"\r{i} seconds left", end="", flush=True)
             print("\r             ", end="", flush=True)
-            print("\rBeep, Beep, beep! Microwaving finished!")
+            print(f"\rBeep, Beep, beep! Microwaving {food} finished!")
             running = False
         print(f"Microwave ran for {timer} seconds with {power} watts.")
         return timer, power
 
     def input_food(self):
-        pass
+        food = input("What food would you like to microwave?")
+        print(f"Alright, lets heat the {food} up!")
+        return food
 
     def take_food(self):
         pass
 
-    def beep_sound(self):
-        pass
 
 microwave = Microwave()
-microwave.set_timer()
+
+microwave.run_microwave()
