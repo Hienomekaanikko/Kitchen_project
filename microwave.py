@@ -2,7 +2,8 @@ import time
 
 class Microwave:
     def __init__(self):
-        pass
+        self.space = 10 #liters
+        self.dirt = 10 #in scale from 10 to being dirtiest to 1 being cleanest
 
     def set_timer(self):
         timer = int(input("Set the timer in seconds: "))
