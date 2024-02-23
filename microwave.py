@@ -3,13 +3,14 @@ import time
 class Microwave:
     def __init__(self):
         self.space = 10 #liters
-        self.dirt = 10 #in scale from 10 to being dirtiest to 1 being cleanest
+        self.dirt = 1 #in scale from 10 to being dirtiest to 1 being cleanest
 
     def run_microwave(self):
         timer = int(input("Set the timer in seconds: "))
         power = int(input("Set the power in watts: "))
         running = True
         while running:
+            self.dirt += 1
             print("*microwave sound*...")
             for i in range(timer, 0, -1):
                 time.sleep(1)
